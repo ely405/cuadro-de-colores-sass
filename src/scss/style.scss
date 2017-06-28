@@ -1,0 +1,45 @@
+@import "components/color";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+%box{
+  height: 100px;
+  width: 15%;
+  margin: 1px;
+}
+.container{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+#one, #two, #three, #four, #five, #six{
+  @extend %box;
+}
+#one{
+  background-color: $base-color;
+}
+#two{
+  background-color: lighten($base-color, 10%);
+}
+#three{
+  background-color: darken($base-color, 10%);
+}
+#four{
+  background-color: desaturate($base-color, 80%);
+}
+#five{
+  background-color: complement($base-color);
+}
+#six{
+  background-color: invert($base-color);
+}

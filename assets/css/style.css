@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#one, #two, #three, #four, #five, #six {
+  height: 100px;
+  width: 15%;
+  margin: 1px; }
+
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: center; }
+
+#one {
+  background-color: red; }
+
+#two {
+  background-color: #ff3333; }
+
+#three {
+  background-color: #cc0000; }
+
+#four {
+  background-color: #996666; }
+
+#five {
+  background-color: cyan; }
+
+#six {
+  background-color: cyan; }
+
+/*# sourceMappingURL=style.css.map */
